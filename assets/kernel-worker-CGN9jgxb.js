@@ -9227,7 +9227,7 @@ async function boot() {
 	});
 	const fsWorker = new Worker(new URL(
 		/* @vite-ignore */
-		"/assets/fs-worker-Ooi3wWKm.js",
+		"./fs-worker-Ooi3wWKm.js",
 		"" + import.meta.url
 	), {
 		type: "module",
@@ -9267,7 +9267,7 @@ async function boot() {
 	};
 	const fetcherWorker = new Worker(new URL(
 		/* @vite-ignore */
-		"/assets/fetcher-worker-C1Js6dV_.js",
+		"./fetcher-worker-C1Js6dV_.js",
 		"" + import.meta.url
 	), {
 		type: "module",
@@ -9322,7 +9322,7 @@ async function boot() {
 	const spawnWorker = (info) => {
 		const worker = new Worker(new URL(
 			/* @vite-ignore */
-			"/assets/process-worker-BxQOPniu.js",
+			"./process-worker-BxQOPniu.js",
 			"" + import.meta.url
 		), {
 			type: "module",
@@ -9961,7 +9961,7 @@ function pythonLspWorker() {
 	if (pyLspWorker) return pyLspWorker;
 	pyLspWorker = new Worker(new URL(
 		/* @vite-ignore */
-		"/assets/python-lsp-worker-CzNpG4SI.js",
+		"./python-lsp-worker-CzNpG4SI.js",
 		"" + import.meta.url
 	), {
 		type: "module",
